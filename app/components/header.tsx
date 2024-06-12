@@ -27,7 +27,7 @@ const Header: React.FC = () => {
                 <code className="font-mono font-bold  text-blue-500 pl-5 mr-20"> MAGPIE </code>
                 {user?.publicMetadata.role == "super_admin" ? (
                   <><Link href="/dashboard" style={{ color: "skyblue", paddingRight: "10px",paddingLeft: "50px" }}>Home</Link>
-                    <Link href="/superadmin/changerole" style={{ color: "skyblue", paddingRight: "20px" }}>S-Admin</Link></>) : (<Link href="/dashboard" style={{ color: "skyblue", paddingRight: "20px", paddingLeft: "100px" }}>Home</Link>)}
+                    <Link href="/superadmin/changerole" style={{ color: "skyblue", paddingRight: "20px" }}>Roles</Link></>) : (<Link href="/dashboard" style={{ color: "skyblue", paddingRight: "20px", paddingLeft: "100px" }}>Home</Link>)}
                 < UserButton />
               </div>
             </div>
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
             <div className="col-span-2 sm:block hidden pt-5">
               {user?.publicMetadata.role == "super_admin" ? (
                 <><Link href="/dashboard" style={{ color: "skyblue", paddingRight: "10px" }}>Home</Link>
-                  <Link href="/superadmin/changerole" style={{ color: "skyblue", paddingRight: "20px" }}>S-Admin</Link></>) : (<Link href="/dashboard" style={{ color: "skyblue", paddingRight: "20px" }}>Home</Link>)}
+                  <Link href="/superadmin/changerole" style={{ color: "skyblue", paddingRight: "20px" }}>Roles</Link></>) : (<Link href="/dashboard" style={{ color: "skyblue", paddingRight: "20px" }}>Home</Link>)}
               < UserButton />
             </div>
 
