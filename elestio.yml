@@ -1,0 +1,35 @@
+config:
+  runTime: "NodeJs"
+  version: ""
+  framework: "Next.js"
+  buildCommand: "npm build"
+  buildDir: ".next/"
+  runCommand: "npm run dev"
+  installCommand: "npm install"
+  icon: "public/favicon.ico"
+ports:
+  - protocol: "HTTPS"
+    targetProtocol: "HTTP"
+    listeningPort: "443"
+    targetPort: "3000"
+    public: true
+    path: "/"
+    isAuth: false
+    login: ""
+    password: ""
+environments:
+  - key: "ENV"
+    value: "development"
+  - key: "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY"
+    value: "pk_test_Y2hhbXBpb24tcmVpbmRlZXItMC5jbGVyay5hY2NvdW50cy5kZXYk"
+  - key: "CLERK_SECRET_KEY"
+    value: "sk_test_Lx0XzYwoVqIfqwhd3Iqeqi80lf3DrS4gyqeO2xA4CB"
+  - key: "NEXT_PUBLIC_SUPABASE_URL"
+    value: "https://tjztdwjcamllmankwqaz.supabase.co"
+  - key: "NEXT_PUBLIC_SUPABASE_KEY"
+    value: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqenRkd2pjYW1sbG1hbmt3cWF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTc4MzQzMzYsImV4cCI6MjAzMzQxMDMzNn0.F94w9vAo8wVhP4mg4_Tdnwb9fsjmrESsjzt1Ufj4Lng"
+  - key: "SUPABASE_JWT_SECRET"
+    value: "D3X9Tf5n1uoxyqhn8epzrVxMAegZ/sVyDenNoYf4ro8YbUKndBTK/kkMisMzvCqc23BvfiyycgYHzij/doO+Xw=="
+webUI:
+  - url: "https://[CI_CD_DOMAIN]"
+    label: "Website"    
