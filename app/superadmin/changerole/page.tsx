@@ -28,7 +28,7 @@ export default async function AdminDashboard(params: {
                     <div className='col-span-5'>
                         <div style={{ "color": "#000000" }}>
                             <h1 className="font-bold text-2xl">Change User Roles</h1>
-                            <p style={{ marginBottom: "10px" }}>This page is restricted to users with the 'super-admin' role.</p>
+                            <p style={{ marginBottom: "10px" }}>This page is restricted to users with the super-admin role.</p>
                             <SearchUsers />
                         </div>
                     </div>
